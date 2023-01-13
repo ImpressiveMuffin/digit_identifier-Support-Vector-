@@ -1,40 +1,51 @@
-Competition Description
+Competition Description :-
+
 MNIST ("Modified National Institute of Standards and Technology") is the de facto “hello world” dataset of computer vision. Since its release in 1999, this classic dataset of handwritten images has served as the basis for benchmarking classification algorithms. As new machine learning techniques emerge, MNIST remains a reliable resource for researchers and learners alike.
 
 In this competition, your goal is to correctly identify digits from a dataset of tens of thousands of handwritten images. We’ve curated a set of tutorial-style kernels which cover everything from regression to neural networks. We encourage you to experiment with different algorithms to learn first-hand what works well and how techniques compare.
 
 
-Practice Skills
+Practice Skills:-
+
 Computer vision fundamentals including simple neural networks
 
 Classification methods such as SVM and K-nearest neighbors
 
 
-Acknowledgements 
+Acknowledgements:-
+
 More details about the dataset, including algorithms that have been tried on it and their levels of success, can be found at http://yann.lecun.com/exdb/mnist/index.html. The dataset is made available under a Creative Commons Attribution-Share Alike 3.0 license.
 
 
-Goal
+Goal:-
+
 The goal in this competition is to take an image of a handwritten single digit, and determine what that digit is.
 For every in the test set, you should predict the correct label.
 
 
-Metric
+Metric:-
+
 This competition is evaluated on the categorization accuracy of your predictions (the percentage of images you get correct).
 
 
-Submission File Format
+Submission File Format:-
+
 The file should contain a header and have the following format:
 
 
 ImageId,Label
+
 1,0
+
 2,0
+
 3,0
+
 etc.
 
 
-Dataset Description
+Dataset Description:-
+
 The data files train.csv and test.csv contain gray-scale images of hand-drawn digits, from zero through nine.
 
 Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pixels in total. Each pixel has a single pixel-value associated with it, indicating the lightness or darkness of that pixel, with higher numbers meaning darker. This pixel-value is an integer between 0 and 255, inclusive.
@@ -49,11 +60,17 @@ For example, pixel31 indicates the pixel that is in the fourth column from the l
 Visually, if we omit the "pixel" prefix, the pixels make up the image like this:
 
 000 001 002 003 ... 026 027
+
 028 029 030 031 ... 054 055
+
 056 057 058 059 ... 082 083
- |   |   |   |  ...  |   |
+
+|   |   |   |  ...  |   |
+
 728 729 730 731 ... 754 755
+
 756 757 758 759 ... 782 783 
+
 The test data set, (test.csv), is the same as the training set, except that it does not contain the "label" column.
 
 
@@ -61,8 +78,13 @@ Your submission file should be in the following format: For each of the 28000 im
 
 
 ImageId,Label
+
 1,3
+
 2,7
+
 3,8 
+
 (27997 more lines)
+
 The evaluation metric for this contest is the categorization accuracy, or the proportion of test images that are correctly classified. For example, a categorization accuracy of 0.97 indicates that you have correctly classified all but 3% of the images.
