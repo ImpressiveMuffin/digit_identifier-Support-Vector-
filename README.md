@@ -3,29 +3,36 @@ MNIST ("Modified National Institute of Standards and Technology") is the de fact
 
 In this competition, your goal is to correctly identify digits from a dataset of tens of thousands of handwritten images. We’ve curated a set of tutorial-style kernels which cover everything from regression to neural networks. We encourage you to experiment with different algorithms to learn first-hand what works well and how techniques compare.
 
+
 Practice Skills
 Computer vision fundamentals including simple neural networks
 
 Classification methods such as SVM and K-nearest neighbors
 
+
 Acknowledgements 
 More details about the dataset, including algorithms that have been tried on it and their levels of success, can be found at http://yann.lecun.com/exdb/mnist/index.html. The dataset is made available under a Creative Commons Attribution-Share Alike 3.0 license.
+
 
 Goal
 The goal in this competition is to take an image of a handwritten single digit, and determine what that digit is.
 For every in the test set, you should predict the correct label.
 
+
 Metric
 This competition is evaluated on the categorization accuracy of your predictions (the percentage of images you get correct).
 
+
 Submission File Format
 The file should contain a header and have the following format:
+
 
 ImageId,Label
 1,0
 2,0
 3,0
 etc.
+
 
 Dataset Description
 The data files train.csv and test.csv contain gray-scale images of hand-drawn digits, from zero through nine.
@@ -38,6 +45,7 @@ Each pixel column in the training set has a name like pixelx, where x is an inte
 
 For example, pixel31 indicates the pixel that is in the fourth column from the left, and the second row from the top, as in the ascii-diagram below.
 
+
 Visually, if we omit the "pixel" prefix, the pixels make up the image like this:
 
 000 001 002 003 ... 026 027
@@ -48,7 +56,9 @@ Visually, if we omit the "pixel" prefix, the pixels make up the image like this:
 756 757 758 759 ... 782 783 
 The test data set, (test.csv), is the same as the training set, except that it does not contain the "label" column.
 
+
 Your submission file should be in the following format: For each of the 28000 images in the test set, output a single line containing the ImageId and the digit you predict. For example, if you predict that the first image is of a 3, the second image is of a 7, and the third image is of a 8, then your submission file would look like:
+
 
 ImageId,Label
 1,3
